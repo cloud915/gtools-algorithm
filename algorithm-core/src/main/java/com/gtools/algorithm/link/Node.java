@@ -25,6 +25,22 @@ public class Node {
         return curr.next;
     }
 
+    public static Node findNode(Node head, Integer val) {
+        Node cur = head;
+        while (!cur.val.equals(val)) {
+            cur = cur.next;
+        }
+        return cur;
+    }
+
+    public static void makeCyc(Node head, Node cycNode) {
+        Node cur = head;
+        while (cur.next != null) {
+            cur = cur.next;
+        }
+        cur.next = cycNode;
+    }
+
     public static void print(Node head) {
         if (head == null) {
             System.out.println();

@@ -13,7 +13,8 @@ public class SingleLinkReversal {
 
         Node newHead = reversal1(head);
         Node.print(newHead);
-
+        Node newHead2 = reversal2(newHead);
+        Node.print(newHead2);
 
     }
 
@@ -36,11 +37,23 @@ public class SingleLinkReversal {
 
     /**
      * 循环
+     *
      * @param head
      * @return
      */
     private static Node reversal2(Node head) {
-        return null;
+        Node cur = head;
+        Node next = head.next;
+        Node temp;
+        while (next != null) {
+            temp = next.next;
+            next.next = cur;
+
+            cur = next;
+            next = temp;
+        }
+        head.next = null;
+        return cur;
     }
 
 }
