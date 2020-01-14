@@ -5,17 +5,17 @@ package com.gtools.algorithm.link;
  * @Author ghy
  * @Date 2020/1/9 17:23
  */
-public class CheckLinkHasCyc {
+public class CheckLinkHasRing {
     public static void main(String[] args) {
         Node head = Node.createLink(1, 2, 3, 4, 5);
         Node randomNode = Node.findNode(head, 3);
-        Node.makeCyc(head, randomNode);
+        Node.makeRing(head, randomNode);
 
-        System.out.println("是否含有环：" + checkCyc(head));
-        System.out.println("产生环的位置：" + findCyc(head).val);
+        System.out.println("是否含有环：" + checkRing(head));
+        System.out.println("产生环的位置：" + findRing(head).val);
     }
 
-    private static boolean checkCyc(Node head) {
+    private static boolean checkRing(Node head) {
 
         Node one = head;
         Node two = head;
@@ -31,7 +31,12 @@ public class CheckLinkHasCyc {
         return false;
     }
 
-    private static Node findCyc(Node head) {
+    /**
+     *
+     * @param head
+     * @return
+     */
+    private static Node findRing(Node head) {
         Node one = head;
         Node two = head;
 

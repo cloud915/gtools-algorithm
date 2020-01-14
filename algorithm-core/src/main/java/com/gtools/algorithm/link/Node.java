@@ -33,7 +33,7 @@ public class Node {
         return cur;
     }
 
-    public static void makeCyc(Node head, Node cycNode) {
+    public static void makeRing(Node head, Node cycNode) {
         Node cur = head;
         while (cur.next != null) {
             cur = cur.next;
