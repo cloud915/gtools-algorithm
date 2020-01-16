@@ -1,4 +1,4 @@
-package com.gtools.algorithm.aqs;
+package com.gtools.algorithm.jdk.aqs;
 
 /**
  * @Description
