@@ -14,11 +14,15 @@ public class HeapSort {
     }
 
     public static void sort(int[] arr) {
+        // 从底部到顶部，更新tree为大顶堆；
+        // 至于半数开始处理，是因为，处理了前半部分，就代表tree的半数是有序的？
         for (int i = arr.length / 2 - 1; i >= 0; i--) {
             adjustHeap(arr, i, arr.length);
         }
         for (int j = arr.length - 1; j > 0; j--) {
+            // 从数组的最后==tree的最右节点（或最右底部的左节点），与顶部交换，完成堆排序的第一步
             BaseSort.swap(arr, 0, j);
+            // 更新堆，完成排序
             adjustHeap(arr, 0, j);
         }
 
