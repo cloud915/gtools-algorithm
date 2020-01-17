@@ -1,7 +1,7 @@
 package com.gtools.algorithm.sort;
 
 /**
- * @Description
+ * @Description 快速排序/交换排序
  * @Author ghy
  * @Date 2020/1/16 11:25
  */

@@ -22,7 +22,7 @@ public class Three_HeapSwapLogic {
             // 完毕后，root node就是最大值
             adjustHeap(nums, i, nums.length);
         }
-        System.out.println(Arrays.toString(nums)); // 疑问：执行到这里，打印的内容，哪里有序？
+        System.out.println(Arrays.toString(nums)); // 疑问：执行到这里，打印的内容，哪里有序？  答：每个子树的都满足父节点值最大
         for (int i = nums.length - 1; i > 0; i--) {
             SortUtil.swap(nums, 0, i);
             adjustHeap(nums, 0, i);
