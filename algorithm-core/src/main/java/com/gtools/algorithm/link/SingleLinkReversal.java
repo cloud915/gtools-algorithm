@@ -1,5 +1,7 @@
 package com.gtools.algorithm.link;
 
+import java.util.Stack;
+
 /**
  * @Description
  * @Author ghy
@@ -13,8 +15,11 @@ public class SingleLinkReversal {
 
         Node newHead = reversal1(head);
         Node.print(newHead);
-        Node newHead2 = reversal2(newHead);
+        Node newHead2 = reversal3(newHead);
         Node.print(newHead2);
+        Stack<Integer> stack=new Stack<>();
+        int a=1;
+        stack.push(a);
 
     }
 
@@ -55,5 +60,18 @@ public class SingleLinkReversal {
         head.next = null;
         return cur;
     }
+    private static Node reversal3(Node head) {
+        Node cur=head;
+        Node next=head.next;
+        Node tmp;
+        while(next!=null){
+            tmp=next.next;
+            next.next=cur;
 
+            cur=next;
+            next=tmp;
+        }
+        head.next=null;
+        return cur;
+    }
 }
