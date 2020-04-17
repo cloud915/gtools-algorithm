@@ -9,7 +9,7 @@ public class ReserveString {
     // 字符串反转
     // 输入：Hello world from beijing
     // 输出：beijing from world Hello
-    
+
     public static void main(String[] args) {
         String str = "Hello world from beijing";
 
