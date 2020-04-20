@@ -28,7 +28,7 @@ public class App {
             System.out.println(q.poll());
         }*/
 
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(1, 10,
+        /*ThreadPoolExecutor executor = new ThreadPoolExecutor(1, 10,
                 10, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(10));
 
         for (int i=0;i<10;i++) {
@@ -41,7 +41,10 @@ public class App {
                 // do something...
             });
         }
-        executor.shutdown();
+        executor.shutdown();*/
+
+        //System.out.println(Integer.valueOf("-"));
+        //System.out.println(Integer.parseInt("-"));
 
     }
 }
