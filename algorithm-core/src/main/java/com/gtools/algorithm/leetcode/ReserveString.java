@@ -28,9 +28,8 @@ public class ReserveString {
                     reString0(array, i, j);
                 }
             } else {
-                j--;
-                reString0(array, i, j);
-                j += 2;
+                reString0(array, i, j-1);
+                j ++;
                 i = j;
             }
         }
