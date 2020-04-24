@@ -10,5 +10,10 @@
         <module name="jdk-core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="algorithm-core" target="1.8" />
+      <module name="gtools-algorithm" target="1.8" />
+      <module name="jdk-core" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

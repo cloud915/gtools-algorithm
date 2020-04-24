@@ -6,7 +6,7 @@ package com.gtools.algorithm.jdk.gof.single;
  * @Date 2020/1/17 10:30
  */
 public class One {
-    public static final One instance = new One();
+    private static final One instance = new One();
 
     private One() {
     }
