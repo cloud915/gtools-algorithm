@@ -7,6 +7,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Future;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
 
 /**
  * @Description
@@ -45,6 +46,9 @@ public class App {
 
         //System.out.println(Integer.valueOf("-"));
         //System.out.println(Integer.parseInt("-"));
+
+        Pattern pattern=Pattern.compile("a|b|c");
+        System.out.println(pattern.matcher("ab").matches());
 
     }
 }
