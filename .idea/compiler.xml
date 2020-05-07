@@ -8,12 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="algorithm-core" />
         <module name="jdk-core" />
+        <module name="netty-use" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="algorithm-core" target="1.8" />
-      <module name="gtools-algorithm" target="1.8" />
-      <module name="jdk-core" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
