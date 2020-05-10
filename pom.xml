@@ -10,6 +10,7 @@
     <modules>
         <module>algorithm-core</module>
         <module>jdk-core</module>
+        <module>netty-use</module>
         <module>jmh-test</module>
     </modules>
     <packaging>pom</packaging>

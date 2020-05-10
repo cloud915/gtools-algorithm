@@ -2,21 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="algorithm-core" />
         <module name="jdk-core" />
-        <module name="jmh-test" />
+        <module name="netty-use" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="algorithm-core" target="1.8" />
-      <module name="gtools-algorithm" target="1.8" />
-      <module name="jdk-core" target="1.8" />
-      <module name="jmh-test" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
