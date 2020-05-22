@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="algorithm-core" />
         <module name="jdk-core" />
+        <module name="jmh-test" />
         <module name="netty-use" />
       </profile>
     </annotationProcessing>

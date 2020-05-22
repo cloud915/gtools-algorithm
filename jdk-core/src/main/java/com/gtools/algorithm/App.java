@@ -47,12 +47,17 @@ public class App {
 
         //Pattern pattern=Pattern.compile("a|b|c");
         //System.out.println(pattern.matcher("ab").matches());
-        List<Integer> list=new ArrayList<>();
+        /*List<Integer> list=new ArrayList<>();
         list.add(1);
         list.add(3);
         list.add(2);
         list.sort(Integer::compareTo);
-        System.out.println(Arrays.toString(list.toArray()));
+        System.out.println(Arrays.toString(list.toArray()));*/
 
+        String aa=null;
+        String appPlatform= Optional.ofNullable(aa).orElse("").toUpperCase();
+        System.out.println(appPlatform);
+        System.out.println("1".toUpperCase());
+        System.out.println("2".equals("".toUpperCase()));
     }
 }
