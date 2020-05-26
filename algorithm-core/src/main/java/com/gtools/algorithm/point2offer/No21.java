@@ -5,6 +5,7 @@ import com.gtools.algorithm.common.TreeNode;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Queue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @Description
@@ -15,23 +16,16 @@ public class No21 {
     // 从上往下打印出二叉树的每个节点，同层节点从左至右打印。
 
     public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
-        Queue<TreeNode> queue = new ArrayDeque<>();
         ArrayList<Integer> list = new ArrayList<>();
-        if (root == null) {//注意：空树返回一个默认构造的空LinkedList，而不是一个空指针null
-            return list;
-        }
+        if (root == null) return list;
 
-        queue.offer(root);
-        TreeNode current;
+        LinkedBlockingQueue<TreeNode> queue = new LinkedBlockingQueue<>();
+        queue.add(root);
         while (!queue.isEmpty()) {
-            current = queue.poll();
-            list.add(current.val);
-            if (current.left != null) {
-                queue.offer(current.left);
-            }
-            if (current.right != null) {
-                queue.offer(current.right);
-            }
+            TreeNode node = queue.poll();
+            list.add(node.val);
+            if (node.left != null) queue.add(node.left);
+            if (node.right != null) queue.add(node.right);
         }
         return list;
     }

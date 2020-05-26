@@ -1,8 +1,6 @@
 package com.gtools.algorithm;
 
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Future;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -47,8 +45,19 @@ public class App {
         //System.out.println(Integer.valueOf("-"));
         //System.out.println(Integer.parseInt("-"));
 
-        Pattern pattern=Pattern.compile("a|b|c");
-        System.out.println(pattern.matcher("ab").matches());
+        //Pattern pattern=Pattern.compile("a|b|c");
+        //System.out.println(pattern.matcher("ab").matches());
+        /*List<Integer> list=new ArrayList<>();
+        list.add(1);
+        list.add(3);
+        list.add(2);
+        list.sort(Integer::compareTo);
+        System.out.println(Arrays.toString(list.toArray()));*/
 
+        String aa=null;
+        String appPlatform= Optional.ofNullable(aa).orElse("").toUpperCase();
+        System.out.println(appPlatform);
+        System.out.println("1".toUpperCase());
+        System.out.println("2".equals("".toUpperCase()));
     }
 }

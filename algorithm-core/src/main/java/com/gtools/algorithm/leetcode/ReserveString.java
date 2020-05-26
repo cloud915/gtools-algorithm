@@ -16,7 +16,7 @@ public class ReserveString {
         System.out.println(reJuzi(str));
     }
 
-    private static String reJuzi(String str) {
+    public static String reJuzi(String str) {
         String re1 = reString0(str.toCharArray(), 0, str.length() - 1);
         char[] array = re1.toCharArray();
 
