@@ -30,8 +30,8 @@ public class No9_1 {
     // 回到题目，使用循环方式实现
     public long fibonacci(int n) {
         int result = 0;
-        int preOne = 1; // 离着第三个值 只有一步的值==前一个
         int preTwo = 0; // 离着第三个值 只有二步的值==前二个
+        int preOne = 1; // 离着第三个值 只有一步的值==前一个
         if (n == 0) {
             return preTwo;
         }

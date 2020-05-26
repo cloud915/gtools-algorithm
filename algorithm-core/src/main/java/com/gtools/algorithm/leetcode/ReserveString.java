@@ -41,9 +41,13 @@ public class ReserveString {
         //char[] array = str.toCharArray();
         //int length = array.length - 1;
         for (int i = begin; i < end; i++, end--) {
-            array[i] ^= array[end];
+            /*array[i] ^= array[end];
             array[end] ^= array[i];
-            array[i] ^= array[end];
+            array[i] ^= array[end];*/
+
+            char tmp=array[i];
+            array[i]=array[end];
+            array[end]=tmp;
         }
 
         return new String(array);
