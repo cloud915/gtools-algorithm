@@ -1,8 +1,9 @@
 package com.gtools.algorithm.point2offer;
 
+import com.gtools.algorithm.common.TreeNode;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
