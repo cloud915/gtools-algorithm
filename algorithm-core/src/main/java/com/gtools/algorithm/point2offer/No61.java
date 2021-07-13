@@ -1,5 +1,7 @@
 package com.gtools.algorithm.point2offer;
 
+import com.gtools.algorithm.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
