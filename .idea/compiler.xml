@@ -7,10 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="algorithm-core" />
         <module name="jdk-core" />
         <module name="jmh-test" />
         <module name="netty-use" />
+        <module name="algorithm-core" />
+        <module name="jvm-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +19,7 @@
       <module name="gtools-algorithm" target="1.8" />
       <module name="jdk-core" target="1.8" />
       <module name="jmh-test" target="1.8" />
+      <module name="jvm-core" target="8" />
       <module name="netty-use" target="1.8" />
     </bytecodeTargetLevel>
   </component>
